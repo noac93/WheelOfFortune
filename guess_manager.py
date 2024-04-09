@@ -49,6 +49,13 @@ class GuessManager:
                 guessed_word += CHAR_PLACEHOLDER
         return guessed_word
 
+    def get_guessed_characters(self):
+        list_guessed = []
+        for char_index, was_guessed in enumerate(self.guessed_chars):
+            if was_guessed:
+                list_guessed.append(chr(ord('a') + char_index))
+        return ', '.join(list_guessed)
+
 
 def normalize_character(char):
     return ord(char) - ord('a')

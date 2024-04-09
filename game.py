@@ -62,5 +62,7 @@ class Game:
         return winning_players
 
 
-def print_word_on_board(guess_manager):
-    print(f"Word: {guess_manager.get_word_printed()}")
+def print_word_on_board(guess_manager_instance):
+    print(f"Word: {guess_manager_instance.get_word_printed()}")
+    guessed_chars = guess_manager_instance.get_guessed_characters()
+    print(f"Already guessed characters: {guessed_chars}") if len(guessed_chars) > 0 else ''
