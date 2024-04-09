@@ -1,0 +1,24 @@
+{
+  "words": [
+    {"word": "apple", "category": "fruit"},
+    {"word": "teacher", "category": "profession"},
+    {"word": "uncle", "category": "family members"},
+    {"word": "stomach", "category": "body parts"},
+    {"word": "A blessing in disguise", "category": "phrase"},
+    {"word": "computer", "category": "electronics"},
+    {"word": "dog", "category": "animal"},
+    {"word": "engineer", "category": "profession"},
+    {"word": "brother", "category": "family members"},
+    {"word": "eye", "category": "body parts"},
+    {"word": "the whole nine yards", "category": "phrase"},
+    {"word": "banana", "category": "fruit"},
+    {"word": "doctor", "category": "profession"},
+    {"word": "aunt", "category": "family members"},
+    {"word": "heart", "category": "body parts"},
+    {"word": "bite the bullet", "category": "phrase"},
+    {"word": "car", "category": "vehicle"},
+    {"word": "elephant", "category": "animal"},
+    {"word": "lawyer", "category": "profession"},
+    {"word": "sister", "category": "family members"}
+  ]
+}
