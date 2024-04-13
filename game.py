@@ -2,12 +2,12 @@ import guess_manager
 from player import Player
 from word_generator import WordGenerator
 
-default_player_names = ['Player1', 'Player2', 'Player3']
+default_player_names = ['Player1', 'Player2']
 
 
 class Game:
 
-    def __init__(self, words_file, num_words=-1, player_names=None):
+    def __init__(self, words_file, num_words=10, player_names=None):
         if player_names is None:
             player_names = default_player_names
         self.wordGenerator = WordGenerator(words_file, int(num_words))

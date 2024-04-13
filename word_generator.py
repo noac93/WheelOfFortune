@@ -1,7 +1,7 @@
 import json
 import random
 
-from word import Word
+from gameword import GameWord
 
 DEFAULT_WORDS_NUM = 10
 
@@ -25,7 +25,7 @@ def import_num_words_from_file(words_file, num_words):
         with open(words_file) as fd:
             file_data = json.load(fd)
             word_entries = file_data["words"]
-            words = [Word(entry["word"].lower(), entry["category"]) for entry in get_random_words(word_entries, num_words)]
+            words = [GameWord(entry["word"].lower(), entry["category"]) for entry in get_random_words(word_entries, num_words)]
             return words
     except FileNotFoundError:
         print("Words file doesn't exist")

@@ -5,8 +5,8 @@ CHAR_PLACEHOLDER = "-"
 
 
 class GuessResult(Enum):
-    INIT = 0
-    RETRY = 1
+    RETRY = 0
+    CORRECT_NO_WIN = 1
     INCORRECT = 2
     WIN = 3
 
@@ -36,7 +36,7 @@ class GuessManager:
         self.chars_counter[guessed_char] = 0
 
         if any(value > 0 for value in self.chars_counter.values()):
-            return GuessResult.RETRY
+            return GuessResult.CORRECT_NO_WIN
 
         return GuessResult.WIN
 
