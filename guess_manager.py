@@ -20,11 +20,13 @@ class GuessManager:
 
     def player_guess(self, player, character):
         if not character.isalpha() or len(character) != 1:
+            print(f"Illegal characters entered ({character}), please try again\n")
             return GuessResult.RETRY
 
         guessed_char = character.lower()
         guessed_char_idx = normalize_character(guessed_char)
         if self.guessed_chars[guessed_char_idx]:
+            print(f"Character ({character}) was already entered, please try again\n")
             return GuessResult.RETRY
 
         self.guessed_chars[guessed_char_idx] = 1
